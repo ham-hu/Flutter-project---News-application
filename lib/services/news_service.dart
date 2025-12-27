@@ -5,8 +5,9 @@ import 'local_db_service.dart';
 
 class NewsService {
   final LocalDbService _db = LocalDbService();
-  // Remplacez par votre clé API NewsAPI
-  final String apiKey = '';
+  // Ne pas stocker de clé en dur. Fournir via --dart-define or CI env.
+  // Exemple local: `flutter run --dart-define=NEWS_API_KEY=your_key_here`
+  final String apiKey = const String.fromEnvironment('NEWS_API_KEY', defaultValue: '');
   final String baseUrl = 'https://newsapi.org/v2';
 
   // Récupérer les news depuis l'API
