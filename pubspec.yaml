@@ -1,0 +1,50 @@
+name: news_app
+description: Application mobile de news moderne avec Flutter, Firebase et API externe
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  cloud_firestore: ^5.0.0
+  firebase_storage: ^12.0.0
+
+  # State Management
+  provider: ^6.1.2
+
+  # HTTP & API
+  http: ^1.2.1
+  dio: ^5.4.3
+
+  # UI & Animations
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  intl: ^0.19.0
+
+  # Utils
+  shared_preferences: ^2.2.2
+  image_picker: ^1.0.7
+  
+  # Base de données locale
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
